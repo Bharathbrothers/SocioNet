@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <!-- Background with rounded squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#grad)" />
+  
+  <!-- Subtle circular network background representing society nodes -->
+  <g opacity="0.2" stroke="#ffffff" stroke-width="2">
+    <circle cx="256" cy="256" r="170" fill="none" stroke-dasharray="8 8" />
+    <circle cx="256" cy="256" r="110" fill="none" />
+    <circle cx="256" cy="256" r="60" fill="none" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Central Academic Book & Network Emblem -->
+  <g filter="url(#shadow)" transform="translate(96, 110)">
+    <!-- Book open pages -->
+    <path d="M 160,230 C 120,200 40,200 10,210 L 10,60 C 40,50 120,50 160,80 C 200,50 280,50 310,60 L 310,210 C 280,200 200,200 160,230 Z" fill="#ffffff" />
+    <!-- Book center spine -->
+    <line x1="160" y1="80" x2="160" y2="230" stroke="#4f46e5" stroke-width="4" stroke-linecap="round" />
+    <!-- Page lines left -->
+    <line x1="40" y1="95" x2="135" y2="105" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" />
+    <line x1="40" y1="125" x2="135" y2="135" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" />
+    <line x1="40" y1="155" x2="120" y2="165" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" />
+    <!-- Page lines right -->
+    <line x1="185" y1="105" x2="280" y2="95" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" />
+    <line x1="185" y1="135" x2="280" y2="125" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" />
+    <line x1="200" y1="165" x2="280" y2="155" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Grad Cap on top -->
+    <polygon points="160,10 240,40 160,70 80,40" fill="#fbbf24" stroke="#d97706" stroke-width="3" />
+    <polygon points="160,70 160,95 190,83 190,58" fill="#d97706" />
+    <path d="M 230,45 L 245,75" stroke="#fbbf24" stroke-width="4" stroke-linecap="round" />
+    <circle cx="245" cy="78" r="4" fill="#fbbf24" />
+  </g>
+
+  <!-- Connected society nodes -->
+  <g fill="#ffffff">
+    <circle cx="110" cy="140" r="14" fill="#38bdf8" stroke="#ffffff" stroke-width="4" />
+    <circle cx="402" cy="140" r="14" fill="#a855f7" stroke="#ffffff" stroke-width="4" />
+    <circle cx="256" cy="420" r="16" fill="#10b981" stroke="#ffffff" stroke-width="4" />
+    <circle cx="90" cy="360" r="12" fill="#f59e0b" stroke="#ffffff" stroke-width="3" />
+    <circle cx="422" cy="360" r="12" fill="#ec4899" stroke="#ffffff" stroke-width="3" />
+  </g>
+</svg>
